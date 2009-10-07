@@ -3,7 +3,7 @@
 Summary:	korners
 Name:		kde4-kdegames-korners
 Version:	0.8
-Release:	0.5
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://www.kde-apps.org/CONTENT/content-files/113113-%{orgname}.tar.gz
