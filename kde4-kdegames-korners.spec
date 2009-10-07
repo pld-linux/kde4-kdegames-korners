@@ -29,10 +29,6 @@ install -d build
 cd build
 %cmake .. \
 	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
-	-DLIB_INSTALL_DIR=%{_libdir} \
-%if "%{_lib}" == "lib64"
-	-DLIB_SUFFIX=64 \
-%endif
 	-DCMAKE_BUILD_TYPE=%{!?debug:Release}%{?debug:Debug}
 
 %{__make}
