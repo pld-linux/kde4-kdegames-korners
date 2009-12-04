@@ -10,8 +10,13 @@ Source0:	http://www.kde-apps.org/CONTENT/content-files/113113-%{orgname}.tar.gz
 # Source0-md5:	83e476d52d564901d116bab3007c3367
 Source1:	%{name}.desktop
 URL:		http://www.kde-apps.org/content/show.php/korners?content=113113
+BuildRequires:	QtNetwork-devel
+BuildRequires:	QtSvg-devel
+BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.6.2
 BuildRequires:	kde4-kdegames-devel
+BuildRequires:	qt4-build
+BuildRequires:	qt4-qmake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
